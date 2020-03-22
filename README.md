@@ -13,13 +13,22 @@ First install:
 
 ### Commands
 
-Run the service
+Run the service at http://localhost:8080
 
     mvn spring-boot:run
     
 Tests with coverage
 
     mvn clean test
+    
+Build the `.jar`
+
+    mvn clean package    
+
+
+Run with Docker (build jar first)
+
+    docker-compose up
 
 
 ### Reference Documentation
@@ -29,4 +38,5 @@ For further reference, please consider the following sections:
 * [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.2.5.RELEASE/maven-plugin/)
 * [JaCoCo and maven](https://www.baeldung.com/jacoco)
 * [JaCoCo and maven](https://automationrhapsody.com/automated-code-coverage-of-unit-tests-with-jacoco-and-maven)
-* [Spring boot guide](https://spring.io/guides/gs/spring-boot)
+* [Spring Boot guide](https://spring.io/guides/gs/spring-boot)
+* [Spring Boot and Docker](https://spring.io/guides/gs/spring-boot-docker/)
